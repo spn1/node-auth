@@ -1,6 +1,6 @@
 import express from 'express';
 import passport from 'passport';
-import { passwordUtils } from '../lib/password';
+// import { validPassword, genPassword } from '../lib/passwords';
 import connection from '../config/database';
 // import User from models.User;
 
@@ -67,7 +67,7 @@ router.get('/protected-route', (req, res, next) => {
 
 // Visiting this route logs the user out
 router.get('/logout', (req, res, next) => {
-  req.logout();
+  req.logout({}, (err: any) => {});
   res.redirect('/protected-route');
 });
 

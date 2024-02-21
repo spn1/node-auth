@@ -1,7 +1,7 @@
 import crypto from 'crypto';
 
 // TODO
-const  validPassword = (password, hash, salt) => {}
-const genPassword = (password) => {}
+const validPassword = () => {}
+const genPassword = () => {}
 
 export default { validPassword, genPassword };

@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import session from 'express-session';
 import passport from 'passport';
 import crypto from 'crypto';
-import routes from './routes';
+import routes from './routes/index';
 import connection from './config/database';
 
 // Package documentation - https://www.npmjs.com/package/connect-mongo
